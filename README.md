@@ -3,11 +3,11 @@
 
 A simple task management application built with HTML, CSS, and JavaScript.
 
-## About
+# About
 
 This is my JavaScript project where I'm learning to build a task manager from scratch. Users can add, complete, and delete tasks, with all data saved in the browser.
 
-## Features (Building...)
+# Features (Building...)
 
 - ✅ Add new tasks
 - ⏳ Mark tasks as complete (coming soon)
@@ -16,7 +16,7 @@ This is my JavaScript project where I'm learning to build a task manager from sc
 - ⏳ Search tasks (coming soon)
 - ⏳ Save tasks to browser (coming soon)
 
-## Technologies
+# Technologies
 
 - HTML5
 - CSS3
