@@ -1,17 +1,24 @@
+let inputElement = document.getElementById("newTask");
+let addTaskBtn = document.getElementById("addTask");
+let taskList = document.getElementById("list");
 
-let addTaskBtn = document.getElementById('addTask');
-addTaskBtn.addEventListener('click', function(){
-    let text = document.getElementById('newTask').value.trim();
-    if (text === '')
-    {
-        alert('Please enter a task');
-        return;
-    } 
-    let newItem = document.createElement('li');
-    newItem.textContent = text;
-    let taskList = document.getElementById('list');
-    taskList.appendChild(newItem);
+function addTask() {
+  let text = inputElement.value.trim();
+  if (text === "") {
+    alert("Please enter a task");
+    return;
+  }
+  let newItem = document.createElement("li");
+  newItem.innerHTML = text + " <button>Delete</button>";
+  taskList.appendChild(newItem);
 
-    document.getElementById('newTask').value = '';
+  inputElement.value = "";
+}
 
-})
+addTaskBtn.addEventListener("click", addTask);
+
+inputElement.addEventListener("keypress", function (event) {
+  if (event.key === "Enter") {
+    addTask();
+  }
+});
