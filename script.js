@@ -8,8 +8,17 @@ function addTask() {
     alert("Please enter a task");
     return;
   }
+
   let newItem = document.createElement("li");
-  newItem.innerHTML = text + " <button>Delete</button>";
+  newItem.innerHTML = text + " ";
+  let deleteBtn = document.createElement("button");
+  deleteBtn.textContent = "❌";
+  deleteBtn.addEventListener("click", function () {
+    newItem.remove();
+  });
+
+  newItem.appendChild(deleteBtn);
+
   taskList.appendChild(newItem);
 
   inputElement.value = "";
