@@ -11,7 +11,7 @@ This is my JavaScript project where I'm learning to build a task manager from sc
 
 - ✅ Add new tasks
 - ⏳ Mark tasks as complete (coming soon)
-- ✅Delete tasks (coming soon)
+- ✅Delete tasks
 - ⏳ Filter tasks (coming soon)
 - ⏳ Search tasks (coming soon)
 - ⏳ Save tasks to browser (coming soon)
