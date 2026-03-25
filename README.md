@@ -10,7 +10,7 @@ This is my JavaScript project where I'm learning to build a task manager from sc
 ## Features (Building...)
 
 - ✅ Add new tasks
-- ⏳ Mark tasks as complete (coming soon)
+- ✅Mark tasks as complete
 - ✅Delete tasks
 - ⏳ Filter tasks (coming soon)
 - ⏳ Search tasks (coming soon)
