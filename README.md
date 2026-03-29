@@ -10,10 +10,10 @@ This is my JavaScript project where I'm learning to build a task manager from sc
 ## Features (Building...)
 
 - ✅ Add new tasks
-- ✅Mark tasks as complete
-- ✅Delete tasks
+- ✅ Mark tasks as complete
+- ✅ Delete tasks
+- ✅ Search tasks
 - ⏳ Filter tasks (coming soon)
-- ⏳ Search tasks (coming soon)
 - ⏳ Save tasks to browser (coming soon)
 
 ## Technologies
