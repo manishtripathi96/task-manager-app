@@ -1,6 +1,26 @@
 let inputElement = document.getElementById("newTask");
 let addTaskBtn = document.getElementById("addTask");
 let taskList = document.getElementById("list");
+let searchInput = document.getElementById("search");
+searchInput.addEventListener("input", searchTask);
+
+function searchTask() {
+  let searchValue = searchInput.value.toLowerCase();
+
+  let allTasks = taskList.children;
+
+  for (let i = 0; i < allTasks.length; i++) {
+    let task = allTasks[i];
+    let taskTextSpan = task.querySelector("span");
+    let taskText = taskTextSpan.textContent.toLowerCase();
+
+    if (taskText.includes(searchValue)) {
+      task.style.display = "block";
+    } else {
+      task.style.display = "none";
+    }
+  }
+}
 
 function addTask() {
   let text = inputElement.value.trim();
